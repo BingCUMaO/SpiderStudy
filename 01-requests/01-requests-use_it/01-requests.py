@@ -10,7 +10,7 @@ if __name__ == '__main__':
     page = response.text
     print(page)
     #4、持久化存储
-    with open('./spiderPage.html', 'w', encoding='utf-8') as sf:
+    with open('spiderPage.html', 'w', encoding='utf-8') as sf:
         sf.write(page)
 
     print("爬取结束")
